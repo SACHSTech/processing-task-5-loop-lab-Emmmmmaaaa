@@ -91,86 +91,30 @@ public class Sketch extends PApplet {
    * Don't loop from 30 to 60 to shift everything over, just add 300 to x.
    */
   public void draw_section2(){
-    int intX = 0;
-    int intY = 0;
 
-    for(int intRow = 0; intRow < 30; intRow++){
-      for(int intColumn = 0; intColumn < 30; intColumn++){
-        intX = (intColumn * 10) + 303 ;
-        intY = (intRow * 10) + 303;
-         if ((intColumn) % 2 == 0) {
-          fill(255); 
-         } else {
-         fill(0); 
-         }
-        noStroke ();
-        rect (intX,intY,4,4);
-      }
-    }
   }
-
   /**
    * Use the modulus operator and an if/else statement to select the color.
    * Don't use multiple 'if' statements.
    */
   public void draw_section3(){
-    int intX = 0;
-    int intY = 0;
 
-    for(int intRow = 0; intRow < 30; intRow++){
-      for(int intColumn = 0; intColumn < 30; intColumn++){
-        intX = (intColumn * 10) + 603 ;
-        intY = (intRow * 10) + 303;
-        if ((intRow) % 2 == 0) {
-          fill(0); 
-         } else {
-         fill(255); 
-         }
-        noStroke ();
-        rect (intX,intY,4,4);
-      }
-    }
   }
-
+  
   /**
    * Use the modulus operator and just one 'if' statement to select the color.
    */
   public void draw_section4(){
-    int intX = 0;
-    int intY = 0;
 
-    for(int intRow = 0; intRow < 30; intRow++){
-      for(int intColumn = 0; intColumn < 30; intColumn++){
-        intX = (intColumn * 10) + 903 ;
-        intY = (intRow * 10) + 303;
-        if ((intRow * intColumn) % 2 == 0) {
-          fill(0); 
-         } else {
-         fill(255); 
-         }
-        noStroke ();
-        rect (intX,intY,4,4);
-      }
-    }
   }
+  
+
 
   /**
    * Do NOT use 'if' statements to complete 5-8. Manipulate the loops instead
    */
   public void draw_section5(){
-    int intX = 0;
-    int intY = 0;
-    int intboxsize = 4; 
-    int intbox = 30; 
 
-    for(int intRow = 0; intRow > 30; intbox++){
-      for(int intColumn = 0; intColumn > 30 ; intColumn++){
-        intX = (intColumn * 10) + 303;
-        intY = (intRow * 10) + 3;
-        noStroke ();
-        rect (intX,intY,intboxsize,intboxsize);
-      }
-    }
   }
 
 
