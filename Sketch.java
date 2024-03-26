@@ -143,10 +143,10 @@ public class Sketch extends PApplet {
       for(int intColumn = 0; intColumn < 30; intColumn++){
         intX = (intColumn * 10) + 903 ;
         intY = (intRow * 10) + 303;
-        if ((intRow * intColumn) % 2 == 0) {
-          fill(0); 
+        if ((intColumn % 2==0) && (intRow % 2==1)){
+          fill(255); 
          } else {
-         fill(255); 
+         fill(0 ); 
          }
         noStroke ();
         rect (intX,intY,4,4);
@@ -158,22 +158,22 @@ public class Sketch extends PApplet {
    * Do NOT use 'if' statements to complete 5-8. Manipulate the loops instead
    */
   public void draw_section5(){
-    
   }
+
 
 
   public void draw_section6(){
     int intY = 3;
+    int intX = 303;
 
     for (int intRow = 0; intRow <= 30; intRow++){
-      int intX = 303;
       for(int intColumn = 0; intColumn < intRow; intColumn++){
         intX = (intColumn * 10) + 303; 
+        intY = (intRow * 10) + 3; 
         fill(255);
         noStroke();
         rect(intX, intY, 4, 4);
       }
-      intY = (intRow * 10) + 3; 
     }
   }
 
@@ -182,7 +182,18 @@ public class Sketch extends PApplet {
   }
   
   public void draw_section8(){
+    int intX = 3;
+    int intY =  303;
 
+    for (int intRow = 0; intRow <= 30; intRow++) {
+      for (int intColumn = 0; intColumn < intRow; intColumn++) {
+        intX = (intRow * 10)+ 903;
+        intY = (intColumn * 10)+ 3 ;
+        fill(255);
+        noStroke();
+        rect(intX, intY, 4, 4);
+      }
+    }
   }
 
 
